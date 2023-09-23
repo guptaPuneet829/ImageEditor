@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato&family=Lugrasimo&family=Oswald&family=Poppins&family=Rock+3D&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+    font-family: 'Oswald', sans-serif;
+    display: grid;
+    font-family: 'Oswald', sans-serif;
+    background: rgb(158,158,164);
+    background: linear-gradient(90deg, rgba(158,158,164,1) 0%, rgba(190,233,222,1) 79%, rgba(70,100,106,1) 100%);
+}   
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 55%;
+    height: auto;
+    padding: 10px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);
+    border-radius: 4px;
+}   
+.container h1 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 2px;
+}
+.container h1 span{
+    color: red;
+}
+.demoImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 5px;
+}
+.demoImg img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.selectImg {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.disabled .demoImg{
+    pointer-events: none;
+    opacity: .5;
+}
+.selectImg button {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding: 6px 15px;
+    outline: none;
+    border: none;
+    /* background-color:rgb(250, 214, 138); */
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.selectImg button img {
+  width: 25px;
+}
+.selectImg button:hover{
+    border: 2px solid black;
+}
+.slider {
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+.disabled .slider{
+    pointer-events: none;
+    opacity: .5;
+}
+.slider input[type = "range"]{
+    width: 100%;
+}
+.slider .filterInfo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.icons{
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    border: 2px solid rgb(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+.disabled .icons{
+    pointer-events: none;
+    opacity: .5;
+}
+.icons p{
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.icons .filterIcons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icons .filterIcons button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.filterIcons button img{
+    width: 15px;
+    font-weight: 600;
+}
+.active{
+    background-color: rgb(180, 247, 247)!important;
+    padding: 5px;
+    border-radius: 5px;
+}
+.rotateIcons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icons .rotateIcons button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.rotateIcons button img{
+    width: 15px;
+    font-weight: 600;
+}
+
+.rotateIcons button:last-child{
+    transform: rotate(90deg);
+}
+.btns{
+    position: relative;
+    margin: 5px 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.disabled .btns{
+    pointer-events: none;
+    opacity: .5;
+}
+.btns button{
+    padding: 8px 12px;
+    border: 2px black solid;
+    outline: none;
+    background-color: transparent;
+    font-size: 12px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    
+}
+.btns button:first-child{
+    background-color:transparent;
+    color: black;
+    font-weight: 700;
+}
+.btns button:first-child:hover{
+    border: none;
+    background-color: rgb(240, 89, 89);
+    color: white;
+    transition: all ease-in-out 0.5s;
+}
+.btns button:last-child{
+    background-color:transparent;
+    color: black;
+    font-weight: 700;
+}
+.btns button:last-child:hover{
+    border: none;
+    background-color: rgb(4, 146, 4);
+    color: white;
+    transition: all ease-in-out 0.5s;
+}
+@media (max-width:768px) {
+    .container{
+        width: 100%;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Image Editor</title>
+</head>
+<body>
+    <div class="container disabled">
+        <h1><span>i</span>mage <span>e</span>ditor</h1>
+        <hr />
+        <div class="demoImg">
+          <img src="image-preview.png" alt="" />
+        </div>
+  
+        <div class="selectImg">
+          <button>select image <img src="images/upload.png" alt="" /></button>
+          <input type="file" name="" id="" accept="image/*" hidden />
+        </div>
+  
+        <div class="slider">
+          <div class="filterInfo">
+            <span class="name">brightness</span>
+            <span class="value">100%</span>
+          </div>
+          <input type="range" name="" id="" max="200" min="0" value="100" />
+        </div>
+        <div class="icons">
+          <p>filters</p>
+          <div class="filterIcons">
+            <button title="Brightness" id="brightness" class="active">
+              <img src="images/brightness.png" alt="" />
+            </button>
+            <button title="Contrast" id="contrast">
+              <img src="images/contrast.png" alt="" />
+            </button>
+            <button title="Saturation" id="saturate">
+              <img src="images/saturation.png" alt="" />
+            </button>
+            <button title="Invert" id="invert">
+              <img src="images/invert.png" alt="" />
+            </button>
+            <button title="Blur" id="blur">
+              <img src="images/blur.png" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="icons">
+          <p>rotate & flip</p>
+          <div class="rotateIcons">
+            <button title="rotate left" id="rotateLeft"><img src="images/rotateLeft.png" alt="" /></button>
+            <button title="rotate right" id="rotateRight"><img src="images/rotateRight.png" alt="" /></button>
+            <button title="flip x" id="flipX"><img src="images/flip.png" alt="" /></button>
+            <button title="flip y" id="flipY"><img src="images/flip.png" alt="" /></button>
+          </div>
+        </div>
+  
+        <div class="btns">
+          <button class="reset">reset filter</button>
+          <button class="save">save image</button>
+        </div>
+      </div>
+      <script src="app.js"></script>
+</body>
+</html>
